@@ -1,17 +1,195 @@
-h1, p {
-  font-family: 'Fredoka One', sans-serif;
-  color: red;
+header {
   text-align: center;
+  background-image: url(https://www.rei.com/dam/vagnini_091316_0373_main_lg.jpg);
+  height: 25em;
+  position: relative;
 }
 
-body {
-    width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 0 20px 20px 20px;
+.header-text {
+  color: rgb(255, 255, 255);
+   position: relative;              
+   top: 50%;                        
+   transform: translate(0, -50%) 
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-  }
+
+.color01 {
+  color: #383838;
+}
+
+.color02 {
+  color: rgb(151, 140, 77);
+}
+
+nav {
+  background-color:rgb(247, 247, 247);
+  width: 100%;
+  height: 4em;
+}
+
+.nav__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: '';
+  position: absolute;
+  width: 1.2ex;
+  height: 0.4ex;
+  background: rgba(0, 0, 0, 0);
+  top: 0.9ex;
+  left: 0.4ex;
+  border: 3px solid rgb(151, 140, 77);
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"] {
+  line-height: 2.1ex;
+}
+
+input[type="checkbox"] {
+   position: absolute;
+   left: -999em;
+}
+
+input[type="checkbox"] + label {
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: -25%;
+  height: 2ex;
+  width: 2ex;
+  background-color: white;
+  border: 1px solid rgb(151, 140, 77);
+  border-radius: 4px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+  margin-right: 0.5em;
+}
+
+.b1 {
+  background: rgb(151, 140, 77);
+  color: white; 
+  font-size: 9pt;
+}
+
+.section-all {
+  width: 100%;
+  background-color: #ffff;
+}
+
+.part2 {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.title {
+  width: 80%;
+  position: relative;
+  padding-top: 30px;
+  padding-left: 120px;
+}
+
+.text1 {
+  position: absolute;
+  top: 30px;
+  font-weight: bold;
+  background: #fff;
+  padding: 0 10px;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.slider__item {
+width: 35%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 8px;
+margin: 30px;
+background-color: rgb(247, 247, 247);
+
+}
+.slider__item-header,.slider__item-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name{
+  color: rgb(151, 140, 77);
+  font-weight: bold;
+}
+
+.slider__item-image {
+  width: 180px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.about {
+  text-align: center;
+  line-height: 30px;
+  background: rgb(170, 156, 117);
+  width:auto;
+}
+
+.frame {
+  padding:40px;
+  vertical-align: middle;
+  border: 1px solid rgb(126, 116, 64);
+  display: inline-block;
+}
+
+.info {
+  background-color: rgb(82, 82, 82);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.some-text {
+  color:white;
+  padding: 10px 40px;
+}
+
+footer {
+  background-color: rgb(66, 66, 66);
+  color: white;
+  width: 100%;
+  height: 15em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-footer, .right-footer {
+  padding: 40px;
+}
