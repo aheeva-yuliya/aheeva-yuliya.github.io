@@ -1,38 +1,46 @@
 header {
   text-align: center;
+  background-size: 100%;
   background-image: url(https://www.rei.com/dam/vagnini_091316_0373_main_lg.jpg);
   height: 25em;
   position: relative;
 }
 
 .header-text {
+  font-family: 'Josefin Sans', sans-serif;
   color: rgb(255, 255, 255);
-   position: relative;              
-   top: 50%;                        
-   transform: translate(0, -50%) 
+  position: relative;              
+  top: 28%;  
+  font-size: large;                      
+  transform: translate(0, -50%) 
 }
 
 
 .color01 {
-  color: #383838;
+  color: #706f6f;
 }
 
 .color02 {
   color: rgb(151, 140, 77);
 }
 
+.color03 {
+  color: #414141;
+}
+
 nav {
   background-color:rgb(247, 247, 247);
   width: 100%;
-  height: 4em;
+  height: 6em;
+  margin-bottom: 40px;
 }
 
 .nav__wrapper {
-  width: 100%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
+  justify-content: space-between;
+  margin: auto;
+  padding: 2em 4em 4em 2em;
 }
 
 input[type="checkbox"]:checked + label::after {
@@ -60,12 +68,16 @@ input[type="checkbox"] {
 input[type="checkbox"] {
    position: absolute;
    left: -999em;
+   padding: 10px;
 }
 
 input[type="checkbox"] + label {
    position: relative;
    overflow: hidden;
    cursor: pointer;
+   font-weight: bold;
+   color: #494949;
+   margin-right: 1.6em;
 }
 
 input[type="checkbox"] + label::before {
@@ -77,14 +89,16 @@ input[type="checkbox"] + label::before {
   background-color: white;
   border: 1px solid rgb(151, 140, 77);
   border-radius: 4px;
-  box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
-  margin-right: 0.5em;
+  box-shadow: inset 0 2px 5px rgba(87, 87, 87, 0.25);
+  margin-right: 0.7em;
 }
 
 .b1 {
-  background: rgb(151, 140, 77);
+  background: rgb(170, 156, 117);
   color: white; 
   font-size: 9pt;
+  border: 1px solid rgb(170, 156, 117);
+  height: 5ex;
 }
 
 .section-all {
@@ -97,11 +111,15 @@ input[type="checkbox"] + label::before {
   padding-bottom: 15px;
 }
 
+.for {
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .title {
-  width: 80%;
   position: relative;
-  padding-top: 30px;
-  padding-left: 120px;
+  padding-top: 30px;  
 }
 
 .text1 {
@@ -109,7 +127,23 @@ input[type="checkbox"] + label::before {
   top: 30px;
   font-weight: bold;
   background: #fff;
-  padding: 0 10px;
+  padding: 0 30px 0 0px;
+}
+
+.navigate {
+  width: 80%;
+  font-weight:900;
+  font-size: 20px;
+  color: rgb(170, 156, 117);
+  text-align: right;
+  padding: 40px 0px 0px 0px;
+  margin-left: 70px;
+}
+.arrow {
+  color: rgb(170, 156, 117);
+  font-weight:900;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .slider {
@@ -122,19 +156,55 @@ input[type="checkbox"] + label::before {
   width: 80%;
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  margin-bottom: 40px;
 }
 
 .slider__item {
-width: 35%;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 8px;
-margin: 30px;
-background-color: rgb(247, 247, 247);
-
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  margin: 0 30px;
+  background-color: rgb(247, 247, 247);
 }
+
+.slider__item-color {
+  display: flex;
+}
+
+.circle {
+  background: none;
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+  margin: 1px;
+}
+
+.first-color {
+  background: #1d42b3;
+}
+
+.second-color {
+  background: #d1ac34;
+}
+
+.third-color {
+  background: #000000;
+}
+
+.forth-color {
+  background: #ebabab;
+}
+
+.fifth-color {
+  background: #888888;
+}
+
+.sixth-color {
+  background: #364b5e;
+}
+
 .slider__item-header,.slider__item-footer {
   width: 100%;
   display: flex;
@@ -142,7 +212,7 @@ background-color: rgb(247, 247, 247);
   align-items: center;
 }
 
-.name{
+.name {
   color: rgb(151, 140, 77);
   font-weight: bold;
 }
@@ -157,27 +227,46 @@ background-color: rgb(247, 247, 247);
   text-align: center;
   line-height: 30px;
   background: rgb(170, 156, 117);
-  width:auto;
 }
 
-.frame {
-  padding:40px;
+.about-section {
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+fieldset {
+  border: 1px solid rgb(139, 127, 91);
+  color:rgb(139, 127, 91);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.inside-frame {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color:rgb(70, 69, 69);
+  padding:20px;
   vertical-align: middle;
-  border: 1px solid rgb(126, 116, 64);
   display: inline-block;
 }
 
 .info {
   background-color: rgb(82, 82, 82);
   width: 100%;
+}
+
+.inside-info {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 0px 30px;
+}
+
+.logo {
+  padding: 5px 10px 5px 0px;
 }
 
 .some-text {
   color:white;
-  padding: 10px 40px;
 }
 
 footer {
