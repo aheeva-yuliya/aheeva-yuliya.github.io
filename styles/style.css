@@ -137,7 +137,7 @@ input[type="checkbox"] + label::before {
   color: rgb(170, 156, 117);
   text-align: right;
   padding: 40px 0px 0px 0px;
-  margin-left: 70px;
+  margin-left: 90px;
 }
 .arrow {
   color: rgb(170, 156, 117);
