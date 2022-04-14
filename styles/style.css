@@ -15,7 +15,6 @@ header {
   transform: translate(0, -50%) 
 }
 
-
 .color01 {
   color: #706f6f;
 }
@@ -139,11 +138,16 @@ input[type="checkbox"] + label::before {
   padding: 40px 0px 0px 0px;
   margin-left: 90px;
 }
-.arrow {
+
+.arrow a:link, a:visited, a:active{
   color: rgb(170, 156, 117);
   font-weight:900;
   font-size: 20px;
   text-decoration: none;
+}
+
+.arrow a:hover {
+  color:rgb(139, 127, 91);
 }
 
 .slider {
@@ -167,6 +171,10 @@ input[type="checkbox"] + label::before {
   padding: 8px;
   margin: 0 30px;
   background-color: rgb(247, 247, 247);
+}
+
+.slider__item:hover {
+  border: solid 2px rgb(170, 156, 117);
 }
 
 .slider__item-color {
@@ -265,6 +273,10 @@ fieldset {
   padding: 5px 10px 5px 0px;
 }
 
+.logo img {
+  height: 40px;
+}
+
 .some-text {
   color:white;
 }
@@ -282,3 +294,24 @@ footer {
 .left-footer, .right-footer {
   padding: 40px;
 }
+
+.credits {
+  width: 300px;
+  float: right;
+  margin-right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  text-align: right;
+}
+
+.credits a {
+  text-decoration: none;
+  color: white;
+}
+
+.credits a:hover {
+  color:rgb(139, 127, 91);
+}
+
+
